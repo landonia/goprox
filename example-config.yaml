@@ -1,0 +1,10 @@
+addr: :8080
+loglevel: trace
+static: ./static
+proxies:
+  -
+    proxy: /my/path
+    to: http://localhost:8081/api
+  -
+    proxy: /my/path2
+    to: http://localhost:8091/api2
